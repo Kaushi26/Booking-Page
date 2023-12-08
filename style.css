@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Nova+Square&family=Pacifico&display=swap');
+
+*{
+    background-color: #303030;
+}
+body{
+    overflow-x: hidden;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+    font-family: 'Nova Square', cursive;
+}
+
+
+.logo{
+    float:left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    background: transparent; 
+}
+.logo img{
+    height: 170px;
+    width: 170px
+}
+.socialmedia img{
+    float: right;
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 12px;
+    background: white;
+}
+.socialmedia nav{
+    padding: 1px; 
+    margin-top: -15%;   
+}   
+.circle{
+    border-radius: 60px;
+    padding-left: 2px;
+    padding-top: 1.5px;
+} 
+.box{
+    padding-left: 2px;
+    padding-top: 1.5px;
+    border-radius: 10px;
+}
+    
+.nav{
+    text-align:left;  
+    background-color: #303030; 
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 3px;
+}
+.nav a{
+    color:#ba0000;
+    background:  rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 18pt;
+    padding: 8px;
+    margin-right: 1%;
+    margin-left: 1.5%;
+}
+
+.top{
+    background-color: #303030;
+    height: 180px;
+    border: 5px solid#ba0000; 
+    border-radius: 10px;
+}
+.homepic img{
+  width: 100%;
+  height: 650px;
+}
+
+.booklink a{
+    text-align: center;
+    color: #ff2b2b;
+    border:5px solid #cd0000;
+    text-decoration: none; 
+    background: transparent; 
+}
+.booklink{
+    position: absolute;
+    width: 40%;
+    font-size: 75pt;
+    margin-top: 17.5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 5.5px;
+    letter-spacing: 2px;
+    background: transparent;
+}
+.booklink a:hover{
+    color: #dddddd;
+}
+.roomtitle{
+    margin-top: -3.5%;
+}
+
+.roomtitle h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60pt;
+    border-bottom: 4px solid #ff2b2b;
+    color:#ff2b2b ;
+    margin-bottom: 6%;
+    transform: scale(2);
+    animation: flipv 3s forwards cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}
+@keyframes flipv{
+    100%{transform: scaleX(2);}
+}
+.roompic{
+    height: 500px;
+    width: 450px;
+    background: transparent; 
+}
+
+.room_d{
+    margin-top: -3.5%;
+    display: flex;
+    color: #ffffff;
+    gap: 15px;
+    padding: 15px;
+    font-size: 17.5pt;
+    text-align: center;
+    margin-bottom: 2%; 
+    width: fit-content;
+    background: transparent;
+}
+.room_d section{
+    background-color: rgb(232, 123, 15);
+    border-radius: 12.5%;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.roomt{
+    background: transparent;
+    border-bottom: 4px solid wheat;
+}
+.rdesc{
+   background: transparent;
+   padding: 15px;
+}
+.priceTable{
+    text-align: center;
+    font-size: 17pt;
+    font-weight: bolder;
+    width: 75%;
+    margin: 2% 12.5%;  
+    background-color: rgb(232, 123, 15);
+    color: #ffffff;
+    display: inline-table;
+ 
+}
+.priceTable h1{
+    font-size: 29.5pt;
+    text-align: center;
+    width: auto;
+    background: transparent;
+}
+.priceTable table{
+    background-color: whitesmoke;
+    align-content: center;
+    background: transparent;
+    font-size: 17pt;
+    width: 75%;
+    margin: 3% 12.5%;  
+    border-width: 5px ;
+}
+.priceTable th{
+    font-weight: bold;
+    color:#ffffff;
+    background: transparent; 
+}
+.priceTable tr{
+    justify-content: center;
+    text-align: center;
+    color:#fff7de;
+    padding: 15px;
+}
+.priceTable td{
+    color:#fff7de;
+    width: 500px;
+    padding: 15px;
+}
+.booking {
+    background: transparent;
+    display: flex;
+    color: #ffffff;
+    gap: 15px;
+    padding: 15px;
+}
+.booking section {
+    background-color: rgb(232, 123, 15);
+    border-radius: 10%;
+    padding: 15px;
+    font-size: 17.5pt;
+    width: 45%;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+} 
+.FormInput{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    width: fit-content;
+    height: auto;
+}
+.FormInput form{
+    background: transparent;
+    width: fit-content;
+    padding: 25px;
+}
+.FormInput h3{
+    background: transparent;
+    margin-bottom: 1.6%;
+    text-align: center;
+    font-size: 22.5pt;
+    
+}
+.FormInput label{
+    font-size: 15pt;
+    margin-right: 5%;
+    margin-left: 5%;
+    background: transparent;
+}
+.FormInput input{
+    height: 30px;
+    background-color: #dddddd;
+    color: black;
+    font-size: 15pt;
+    font-weight: 500;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.FormInput fieldset{
+    background: transparent;
+    border-radius: 12.5%;
+
+}
+.FormInput legend{
+    background: transparent;
+}
+.c_details p, label, input{
+    background: transparent;
+    width: 350px;
+}
+.duration{
+    background: transparent;
+    margin-top: -2.5%;
+}
+
+.duration p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;  
+    margin-bottom: -2%;
+}
+.duration input{
+    width: 175px;
+    margin-right: 10%;
+    margin-top: -2%;
+}
+.duration label{
+    margin-right: -2%;
+    background: transparent;
+}
+.heading1{
+    background: transparent;
+    width: fit-content;
+}
+
+.localTourist p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: -4%;
+}
+
+.localTourist input{
+    width: 50px;
+    margin-top: -2%;
+    text-align: center;
+    
+}
+
+.foreignTourist p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: -0.5%;
+}
+.foreignTourist input{
+    width: 50px;
+    margin-top: -2%;
+    text-align: center;
+    
+}
+.food{
+    margin-bottom: -12.5%;
+}
+.food p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+
+}
+.food input{
+    width: 50px;
+    margin-top: -2%;
+    text-align: center;
+}
+.roomtype{
+    margin-bottom: 2%;
+    margin-top: -1%;
+}
+.roomtype p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: -4%;
+}
+.roomtype input{
+    width: 50px;
+    margin-top: -2%;
+    text-align: center;
+}
+.bed p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: -4%;
+}
+.bed input{
+    width: 50px;
+    margin-top: -2%;
+    text-align: center;
+}
+.choices1{
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-top: -2.25%;
+
+}
+
+.choices p{
+    background: transparent;
+    width: fit-content;
+    margin-bottom: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.choices select{
+    width: auto;
+    font-size: 15pt;
+    height: 30px;
+    background-color: #dddddd;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+
+}
+.choices option{
+    background-color: #dddddd;
+    color: black;
+}
+.extrareq p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-top: -3%;
+}
+.extrareq input{
+    width: 50px;
+    margin-top: -2%;
+}
+.durationAdv p{ 
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: -4%;
+}
+.durationAdv input{
+    width: 50px;
+    margin-top: -2%;
+    text-align: center;
+}
+.choices1 p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-left: -15%;
+    margin-bottom: -2%;
+
+}
+.choices1 select{
+    width: 175px;
+    margin-top: -2%;
+    font-size: 15pt;
+    height: 30px;
+    background-color: #dddddd;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    margin-left: -5%;
+}
+.choices1 option{
+    background-color: #dddddd;
+    color: black;
+}
+.guide p{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: -4%;
+}
+.guide input{
+    width: 50px;
+    margin-top: -2%;
+}
+.btns{
+    background: transparent;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    width: 60%;
+    margin-right: 2.5%;
+    margin-left: 17.5%;
+
+}
+.btns button{
+font-size: 16pt;
+font-weight: bold;
+text-align: center;
+background-color: #ba0000;
+margin-right: 10%;
+}
+.promo1{
+    display: flex;
+    background: transparent;
+    width: fit-content;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: -2%;
+}
+.promo1 input{
+    width: 125px;
+    margin-top: -2%;
+}
+
+.output {
+    display: inline-flexbox;
+    width: fit-content;
+    margin: 0;
+}
+
+.output section {
+    background: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.current {
+    display: inline-flexbox;
+    width: 100%;
+}
+.current p{
+    background: transparent;
+}
+
+.current h2 {
+    background: transparent;
+    margin-bottom: 1.5%;
+
+}
+
+.current section {
+    background: transparent;
+    width: 100%;
+    height: 25%;
+}
+
+.current span {
+    background: transparent;
+    color: black;
+    width: 70%;
+}
+
+.section1 p {
+    background: transparent;
+    width: fit-content;
+}
+
+.section1 h3 {
+    color: #ba0000;
+    background: transparent;
+    width: fit-content;
+}
+
+.summary {
+    background: transparent;
+    width: 100%;
+}
+
+.summary h2 {
+    background: transparent;
+    text-align: center;
+    margin-left: -6%;
+
+}
+
+#bktable{
+    margin-top: 5%;
+    margin-left: 4%;
+    background-color: rgb(232, 123, 15);
+    width: 85%;
+    justify-content: center;
+    border-collapse: collapse;
+}
+#bktable tr{
+    justify-content: center;
+    text-align: center;
+}
+
+#bktable th,#bktable td {
+    border: 2px solid white; /* Set border color to white */
+    padding: 8px;
+    background: transparent;
+    text-align: center;
+    color: white; /* Set text color to white */
+}
+#expand{
+    width: 200px;
+}
+
+
+
+@media screen and
+ (max-width:768px) {
+    header{
+        height: auto;
+    }
+    .top{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+    .socialmedia nav{
+        height: auto;
+        margin-top: 1%;
+        margin-left: 40%;
+        margin-bottom: 5%;
+        float: left;
+        background: transparent;
+        position: sticky;
+    }
+    .nav{
+        height: auto;
+        margin: 0%;
+        margin-top: 5%;
+    }
+    .nav a{
+        margin-bottom: 2%;
+    }
+
+    .nav nav{
+       margin: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo img{
+        padding: 0%;
+        height: 400px;
+        width: 100%;
+    }
+
+    .homepic{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        margin-bottom: 4.5%;
+    }
+    .homepic img{
+        width: 100%;
+    }
+    .booklink{
+        display: block;
+        margin:70% auto;
+        width: fit-content;
+        text-align: center;
+        background: transparent;
+        position: -webkit-sticky;
+        font-size:xx-large;        
+    }
+    .booklink a{
+        font-size: 45pt;
+        margin: auto;
+        padding: 0%;
+
+    }
+    .booking{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+        margin-top: 5%;
+        border-radius: 10%;
+        justify-content: center;
+        background-color: rgb(232, 123, 15);
+    }
+    .roomtitle{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    .roomtitle h1{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+        animation: none;
+    }
+    .room_d{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .room_d section{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        margin-bottom: 1.5%;
+    }
+    .room_d img{
+        width: 100%;
+        border-radius: 20%;
+    }
+    .rdesc{
+        width: auto;
+        padding: 15px;
+    }
+    .roomt{
+        padding: 22.5px;
+    }
+    .priceTable {
+        width: 100%;
+        margin: 2% 0;
+    }
+    .priceTable table {
+        width: 100%;
+        margin: 3% 0;
+    }
+    .priceTable td {
+        width: auto;
+
+    }
+    .booking{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -1%;
+        margin-bottom: 2%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0%;
+    }
+    .booking section{
+        width: 100%;
+        margin-bottom: 2%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0%;
+    }
+    .FormInput{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0%;
+    }
+    .FormInput form{
+        width: fit-content;
+        padding: 0%;
+    }
+    .FormInput input{
+        height: auto;
+    }
+    .FormInput label{
+        font-size: 16.5pt;
+    }
+
+    .FormInput fieldset{
+        height: auto;
+        width: auto;
+        margin: 0;
+        border-radius: 15%;
+    }
+    .FormInput form{
+        height: 100%;
+        width: auto;
+        padding: 0%;
+    }
+    .c_details{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .c_details p{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        text-align: center;  
+        height: auto;
+    }
+    .c_details input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+    }
+    .duration{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .duration p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        margin-bottom: 5%;
+        height: auto;
+    }
+    .duration label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+    }
+    .duration input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+    }
+    .choices{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .choices p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        height: auto;    
+    }
+    .choices label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    .choices select{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+    }
+    .choices option{
+        width: 80%;
+        height: auto;
+        margin:0;
+        align-self: center;
+    }
+
+    .localTourist p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        height: auto; 
+        margin-bottom: 2%;   
+    }
+    .localTourist label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .localTourist input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+    }
+    .foreignTourist{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .foreignTourist p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        height: auto;    
+    }
+    .foreignTourist label{
+        width: 100%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+        text-align: center;
+    }
+    .foreignTourist input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+    }
+    .roomtype{
+        width: 100%;
+        padding: 0%;
+        margin: 0;
+    }
+    .roomtype p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        height: auto;    
+        margin-bottom: 2%;
+    }
+    .roomtype label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .roomtype input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+    }
+    .bed{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .bed p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        height: auto;  
+        margin-bottom: 2%;  
+    }
+    .bed label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .bed input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        align-self: center;
+    }
+    .extrareq p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;   
+        margin-bottom: 5%;   
+    }
+    .extrareq label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .extrareq input{
+        width: 40px;
+        height: 20px;
+        margin-top: 0.75%;;
+        align-self: center;
+    }
+
+    .food{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .food p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;  
+        height: auto;   
+
+    }
+    .food label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .food input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        margin-bottom: 2%;
+        align-self: center;
+    }
+    .promo1{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 0%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 3.5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .promo1 label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .promo1 input{
+        margin-top: 0.75%;
+        margin-bottom: 2%;
+        align-self: center;
+        width: 80%;
+    }
+
+    .guide p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;   
+        margin-bottom: 5%;     
+    }
+    .guide label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .guide input{
+        width: 40px;
+        height: 20px;
+        margin-top: 0.75%;;
+        align-self: center;
+    }
+    .durationAdv p{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;   
+        margin-bottom: 5%;   
+    }
+    .durationAdv label{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .durationAdv input{
+        width: 80%;
+        height: auto;
+        margin-top: 0.75%;
+        margin-bottom: 2%;
+        align-self: center;
+
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .btns button{
+        width: 40%;
+        height: auto;
+        text-align: center;
+        margin: 0 11%;
+
+    }
+    .current h2{
+        margin-left: 5%;
+    }
+   .section1 h3,p{
+        margin-left: 7.5%;
+        width: auto;
+    }
+    .summary{
+        width: 100%;
+    }
+    .summary h2{
+        margin: 0%;
+    }
+    #bktable{
+        margin: 0 15%;
+        width: 70%;
+    }
+    #expand{
+        width: 200px;
+    }
+}
+.footer{
+    background-color: #000000;
+     font-size: 12.5pt;
+     color: #ffffff;
+     padding: 10px ;
+     margin-top: 1.5%;
+     display: flex;
+     width: 100%;
+ }
+ .footer section{
+     width: 100%;
+     text-align: center;
+     margin-left: 5%;
+     margin-right: 5%;
+     background: transparent;
+ }
+ .footer section h3{
+     font-size: 17.5pt;
+     font-weight: 400;
+     margin-bottom: 30px;
+     background: transparent;
+     
+ }
+ 
+ .col1 a{
+     display: block;
+     margin-bottom: 10px;
+     color: #ffffff;
+     text-decoration: none;
+     background: transparent;
+ }
+ 
+ 
+ .col2 img{
+    height: 130px;
+    width: 120px;
+     margin-top: -22.5px;
+     margin-bottom: 1px;
+     background: transparent;
+ }
+ .footer form{
+     background: transparent;
+ }
+ 
+ .footer input{
+     font-size: 15pt;
+     background-color: white;
+     color: #000000;
+     text-align: center;
+     width: 300px;
+     height: 40px;
+     border-radius: 10px;
+     margin-top: 7px;
+     margin-bottom: 10px;
+     outline: none;
+ }
+     
+ 
+ .footer button{
+     color: #dddddd;
+     background-color: #797474;
+     outline: none;
+     border: none;
+     border-radius: 10px;
+     width: 125px;
+     height: 30px;
+     font-weight: 900;  
+ }
+ 
+ 
+ .col3 a{
+     color: #dddddd;
+     text-decoration: none;
+     background: transparent;
+ }
+ .col3 nav{
+     background: transparent;
+ }
+ .col3 p{
+     background: transparent;
+ }
+ .col3 img{
+     background: transparent;
+     background-color: white;
+ }
+ 
+ 
+ 
+ 
+ @media screen and
+  (max-width:768px){
+     footer{
+         width: 100%;
+     }
+     .footer{
+         flex-direction: column;
+         width: 100%;
+         padding: 0%;
+     }
+     .footer section{
+         width: auto;
+     }  
+     .footer input{
+         width: 100%;
+     }
+     .footer button{
+         width: 100%;
+         margin: 0%;
+     }
+     .footer a{
+         width: auto;
+         margin: 0%;
+         padding: 0%;
+     }
+ }

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <title>Booking</title>
+</head>
+<body>
+    <header>
+        <section class="top" aria-label="complete navigation bar">
+            <!--Logo-->
+            <section class="logo" aria-label="logo">
+               <img src="whitebglogo.png" alt="logo of Oak ray Hotel"> 
+            </section>
+            <section class="nav" aria-label="navigation bar">
+                <nav>
+                    <a href="./index.html" target=”_blank” >Home</a>
+               
+                    <a href="./Branches.html" target=”_blank” >Branches</a>
+                    
+                    <a href="./Adventures.html" target=”_blank” >Adventures</a>
+                    
+                    <a href="./Restaurents.html" target=”_blank” >Dine-inn's</a> 
+                    
+                    <a href="./Booking.html" target=”_blank” >Booking</a>
+                    
+                    <a href="./Contactus.html" target=”_blank” >Contact Us</a>
+
+                </nav>
+                                       
+            </section>
+            <section class="socialmedia" aria-label="socialmedia navigation">
+                <nav>
+                    <a href="https://www.facebook.com/OakRayHotels/"><img class="circle" src="./fb.png" alt="facebook logo" height="28" width="28"></a>
+    
+                    <a href="https://www.instagram.com/oakrayhotels/"><img class="box" src="./insta.png" alt="instagram logo" height="28" width="28"></a>
+              
+                    <a href="https://twitter.com/OakRayHotels"><img class="circle" src="./twitter.png" alt="twitter logo" height="28" width="28"></a>
+                </nav>
+            </section>
+        </section> 
+    </header>
+
+    <section class="homepic" aria-label="Home Picture">
+        <img src="bookingpghomepic.jpg" alt="picture of the hotel">
+    </section>
+
+    <section class="roomtitle">
+        <h1>Our Suites</h1>
+        <section class="room_d"  aria-label="Room Details">
+
+            <section class="room1">
+                <h2 class="roomt">Deluxe Single</h2>
+                <img class="roompic" src="./d1.jpg" alt="picture of deluxe room">
+                <p class="rdesc">The Hotel is home to Deluxe Single Rooms Swathed in comfort and equipped with luxury amenities, these rooms are an ideal spot to relax and unwind.</p>
+            </section>
+    
+            <section class="room2">
+                <h2 class="roomt">Deluxe Double</h2>
+                <img class="roompic" src="./d2.jpg" alt="picture of deluxe double room">
+                <p class="rdesc">Dressed in light linen and rich wood, the bedrooms are airy and equipped with modern amenities that befit contemporary life.</p>
+            </section>
+    
+            <section class="room3">
+                <h2 class="roomt">Deluxe Triple</h2>
+                <img class="roompic" src="./d3.jpg" alt="picture of deluxe triple room">
+                <p class="rdesc">Home to Superior Deluxe Rooms, Oak Ray Hotel offers every comfort to make your stay a memorable one</p>
+            </section>
+        </section> 
+    </section>
+
+    <section class="priceTable" aria-label="Price Table">
+        <h1>Prices Of Bookings</h1>
+        <table>    
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Cost in LKR </th>
+            </tr>
+        
+        
+            </thead>
+            <tbody>
+        
+            <tr>
+                <Td>Single Rooms</Td>
+                <td >25,000.00</td>
+            </tr>
+            <tr>
+                <td>Double Rooms</td>
+                <td >35,000.00</td>
+            </tr>
+            <tr>
+                <td>Tripple Rooms</td>
+                <td >40,000.00</td>
+            </tr>
+            <tr>
+                <td>Kids above 5 years of age</td>
+                <td >5000.00 extra for meals</td>
+            </tr>
+            <tr>
+                <td>Extra Bed</td>
+                <td >8000.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Diving for local Adults (1 hr)</td>
+                <td>5000.00</td>
+            </tr>
+            <tr>
+                <td>Diving for local kids (above 5 years)</td>
+                <td>2000.00</td>
+            </tr>
+            <tr>
+                <td>Diving for foreign adults</td>
+                <td>10,000.00</td>
+            </tr>
+            <tr>
+                <td>Diving for foreign adults</td>
+                <td>5000.00</td>
+            </tr>
+            <tr>
+                <td>Guide cost for Adult</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <td>Guide cost for Child</td>
+                <td>500.00</td>
+            </tr>
+        </tbody>
+        </table>
+    
+    </section>
+
+    <section class="booking" aria-label="Booking Form">
+        <section class="FormInput">
+            <form method="get" id="bookingForm">
+                <fieldset>
+                    <legend><h3>Customer Details</h3></legend>
+                    <section class="c_details" aria-label="customer details">
+                        <p>
+                            <label for="Name">Full Name :</label>
+                            <input type="text" name="Name" id="Name" maxlength="20" required>
+                        </p>
+                        <p>
+                            <label for="email">Email :</label>
+                            <input type="text" id="email" name="email" placeholder="sample123@gmail.com" required>
+                        </p>
+                        <p>
+                            <label for="contact">Contact Number :</label>
+                            <input type="tel" name="contact" id="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13" required>
+                        </p>
+
+                    </section>
+                    <h3>Booking Details</h3>
+                    <section class="duration">
+                        <h4 class="heading1">Booking Dates</h4>
+                        <p>
+                            <label for="arrival">Arrival :</label>
+                            <input type="date" name="arrival" id="arrival" required>
+                        </p>
+    
+                        <p>
+                            <label for="departure">Departure :
+                                <br>(Required Only for Room Booking)</label>
+                            <input type="date" name="departure" id="departure">
+                        </p>
+                    </section>
+
+                    <section class="choices" aria-label="Hotel branch & adventure selection">
+                        <p>
+                            <label for="branch">Hotel Branch</label>
+                            <select name="branch" id="branch" required>
+                                <option value="" selected disabled hidden>Select an option</option>
+                                <option value="None">None</option>
+                                <option value="Oak Ray Ceysands, Bentota">Oak Ray Ceysands, Bentota</option>
+                                <option value="Oak Ray Bay, Unawatuna">Oak Ray Bay, Unawatuna</option>
+                                <option value="Oak Ray Haridra, Wadduwa">Oak Ray Haridra, Wadduwa</option>
+                                <option value="Oak Ray Reef, Wattala">Oak Ray Reef, Wattala</option>
+                                <option value="Oak Ray Chena Huts, Yala">Oak Ray Chena Huts, Yala</option>
+                            </select>
+                        </p>   
+                        <p>
+                            <label for="adventure">Adventure :</label>
+                            <select name="adventure" id="adventure">
+                                <option value="" selected disabled hidden>Select an option</option>
+                                <option value="None">None</option>
+                                <option value="Scuba-Diving" >Scuba-Diving</option>
+ 
+                            </select>
+                        </p>
+                    </section>
+
+                    <section class="localTourist">
+                        <h4 class="heading1">Local Tourist</h4>
+                        <p id="adult_l">
+                            <label for="adultL">No Of Adult/s :</label>
+                            <input type="number" name="adultL" id="adultL" min="0" value="0">
+                        </p>
+        
+                        <p id="child_l">
+                            <label for="childL">No Of Child/Children :</label>
+                            <input type="number" name="childL" id="childL" min="0" value="0">
+                        </p>
+                    </section>
+    
+                    <section class="foreignTourist">
+                        <h4 class="heading1">Foreign Tourist</h4>
+                        <p id="adult_f">
+                            <label for="adultF">No Of Adult/s :</label>
+                            <input type="number" name="adultF" id="adultF" min="0" value="0">
+                        </p>
+        
+                        <p id="child_f">
+                            <label for="childF">No Of Child/Children :</label>
+                            <input type="number" name="childF" id="childF" min="0" value="0">
+                        </p>
+                    </section>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Room Booking</h3></legend>
+                    <section class="roomtype">
+                        <h4 class="heading1">Room Type :</h4>
+                        <p>
+                            <label for="single">Deluxe Single :</label>
+                            <input type="number" name="single" id="single" min="0" value="0">
+                        </p>
+    
+                        <p>
+                            <label for="double">Deluxe Double :</label>
+                            <input type="number" name="double" id="double" min="0" value="0">
+                        </p>
+    
+                        <p>
+                            <label for="triple">Deluxe Triple :</label>
+                            <input type="number" name="triple" id="triple" min="0" value="0">
+                        </p>
+                    </section> 
+                    <section class="bed">
+                        <h4 class="heading1">Extra Bed</h4>
+                        <p>
+                            <label for="bed">No of Beds Needed :</label>
+                            <input type="number" name="bed" id="bed" min="0" value="0">
+                        </p>
+                    </section>
+    
+                    <section class="extrareq">
+                        <h4 class="heading1">Extra Requirements :</h4>
+                        <p>
+                            <label for="wifiCheckbox">WiFi</label>
+                            <input type="checkbox" name="xtra" id="wifiCheckbox" value="wifi">
+    
+                        </p>
+                        <p>
+                            <label for="gardenCheckbox">Garden View</label>
+                            <input type="radio" name="xtra" id="gardenCheckbox" value="garden">
+                        </p>
+                        <p>
+                            <label for="poolCheckbox">Pool View</label>
+                            <input type="radio" name="xtra" id="poolCheckbox" value="pool">
+                        </p>
+                    </section>
+                    
+                    <section class="food">
+                        <h4 class="heading1">Food for Kids</h4>
+                        <p>
+                            <label for="food">No of Kids above 5 Years of Age :</label>
+                            <input type="number" name="food" id="food" min="0" value="0">
+                        </p>
+                    </section>
+                    <p class="promo1">
+                        <label for="promo">Promo Code</label>
+                        <input type="text" id="promo" name="promo" maxlength="8">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><h3>Adventure Booking</h3></legend>
+
+                    <section class="durationAdv">
+                        <h4 class="heading1">Duration Of Adventure</h4>
+                        <p>
+                            <label for="advtime">Time Duration Of Adventure (Hr/s):</label>
+                            <input type="number" name="advtime" id="advtime" min="1" value="1">
+                        </p>
+                    </section>
+
+                    <section class="guide">
+                        <h4 class="heading1">Need Guide Assistance :</h4>
+                        <p>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="guide" id="yes" value="yes" required>
+                        </p>
+                        <p>
+                            <label for="no">No</label>
+                            <input type="radio" name="guide" id="no" value="no">
+                        </p>
+    
+                        <h4 class="heading1">Guide for :</h4>
+                        <p>
+                            <label for="child">Child</label>
+                            <input type="radio" name="guide2" id="child" value="child">
+                        </p>
+    
+                        <p>
+                            <label for="adult">Adult</label>
+                            <input type="radio" name="guide2" id="adult" value="adult">
+                        </p>
+
+                        <p>
+                            <label for="both">Both</label>
+                            <input type="radio" name="guide2" id="both" value="both">
+                        </p>
+                    </section> 
+                </fieldset> 
+            </form>
+
+        </section>
+        <section class="output" aria-label="Current Booking and Booking Summary">
+            <section class="current">
+                <h2>Current Booking</h2>
+                <section class="section1">
+                    <h3>General Info</h3>
+                    <p>Arrival Date : <span id="A_date"></span></p>
+                    <p>Departure Date : <span id="D_date"></span></p>
+                    <p>Total No of Days : <span id="totaldays"></span></p>
+
+                    <p>Hotel Branch : <span id="branchName"></span></p>
+                    <p>No of Local tourist Adults : <span id="localAdult"></span> </p>
+                    <p>No of Local tourist child/children : <span id="localChild"></span> </p>
+                    <p>No of Foreign tourist Adults : <span id="foreignAdult"></span> </p>
+                    <p>No of Foreign tourist child/children : <span id="foreignChild"></span> </p>
+
+
+                    <h3>Hotel Booking</h3>
+                    <p>No of Single Room : <span id="deluxeSingle"></span></p>
+                    <p>No of Double Room : <span id="deluxeDouble"></span></p>
+                    <p>No of Triple Room : <span id="deluxeTriple"></span></p>
+                    <p>No of Extra Beds : <span id="xtraBed"></span></p>
+                    <p>No of Kids Above 5 Years Of Age : <span id="xtraFood"></span></p>
+                    <p>Extra Requirements : <span id="otherReq"></span></p>       
+                    
+                    
+                    
+                    <h3>Adventure Booking</h3>
+                    <p>Adventure : <span id="adv"></span></p>
+                    <p>Time Duration (Hours): <span id="timeAdv"></span></p>
+                    <p>Need A Guide : <span id="guideNeed"></span></p>
+                    <p>Guide : <span id="guideWhom"></span></p>      
+                </section>
+
+
+                <p>Current Cost of Room Booking : <span id="currentRCost"></span></p>
+                <p>Current Cost of Adventure Booking : <span id="currentACost"></span></p>
+                <p>Loyalty Points Earned : <span id="points"></span></p>
+
+
+                <p class="btns">
+                    <button type="submit" id="book_room">Book Room</button>
+                    <button type="submit" id="book_adv">Book Adventure</button> 
+                    <button type="submit" id="loyalty">Check Loyalty</button>
+                    <button type="submit" id="fav">♡ Favourites</button>
+                </p> 
+            </section>  
+
+            <section class="summary">
+                <h2>Booking Summary</h2>
+                <table id="bktable"></table>
+            </section>
+        </section>
+    </section>
+<footer>
+    <section class="footer" aria-label="Footer">
+        <section class="col1">
+            <h3>Useful Links</h3>
+            <a href="./index.html" target=”_blank” >Home</a>
+               
+            <a href="./Branches.html" target=”_blank” >Branches</a>
+            
+            <a href="./Adventures.html" target=”_blank” >Adventures</a>
+            
+            <a href="./Restaurents.html" target=”_blank” >Dine-inn's</a> 
+            
+            <a href="./Booking.html" target=”_blank” >Booking</a>
+            
+            <a href="./Contactus.html" target=”_blank” >Contact Us</a>
+        </section>
+    
+        <section class="col2">
+            <h3>Newsletter</h3>
+            <img src="./only_logo-removebg-preview.png" alt="logo of oak ray hotels">
+            <form method="get">
+                <input type="text" placeholder="Your E-Mail Address">
+                <br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </section>
+    
+        <section class="col3">
+            <h3>Contact</h3>
+            <nav>
+                <a href="https://www.facebook.com/OakRayHotels/"><img class="circle" src="./fb.png" alt="facebook logo"  height="28" width="28"></a>
+    
+                <a href="https://www.instagram.com/oakrayhotels/"><img class="box" src="./insta.png" alt="instagram logo"  height="28" width="28"></a>
+          
+                <a href="https://twitter.com/OakRayHotels"><img class="circle" src="./twitter.png" alt="twitter logo"  height="28" width="28"></a>
+            </nav>
+    
+        <p>Devani Rajasinghe Mawatha,
+            <br>
+            Getambe, Kandy
+            <br>
+            Sri Lanka
+        </p>
+        <p>
+            <a href="+94-812-389-141">(+94) 812 389 141</a>
+            <br>
+            <a href="+94-777-999-252">(+94) 777 999 252</a>
+        </p>
+
+        <p>
+            <a href="inquiries@oakrayhotels.com">inquiries@oakray.com
+            </a>
+        </p>
+        </section>
+    </section>
+    
+</footer>  
+<script src="./main.js"></script>
+</body>
+</html>
