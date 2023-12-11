@@ -187,15 +187,15 @@ function init(){
     RoomCost3=0
     extraBed = 0;
     bedCost=0;
-    wifiChoice = "no Choice";
-    poolViewChoice = "no Choice";
-    gardenViewChoice = "no Choice";
+    wifiChoice = "No Choice";
+    poolViewChoice = "No Choice";
+    gardenViewChoice = "No Choice";
     ChildFood = 0;
     foodCost=0;
     adventure = "None";
     advTime=0;
-    guideNeed = "no Choice";
-    guideWhom = "no Choice";
+    guideNeed = "None";
+    guideWhom = "None";
     guideCostA=0;
     guideCostC=0;
     GuideC=0;
@@ -389,26 +389,27 @@ function updateTimeAdv(){
     currentTimeAdv.innerText = advTime;
 }
 
+
 currentGuideNeed.innerText = "No";
 function updateGuideNeed() {
     if (this.value === "yes") {
         guideNeed = "Yes";
+        guideWhom = "None"; // Set default guideWhom to "None"
+        updateGuideWhom();
+        PriceAdv();
     } else {
         guideNeed = "No";
         guideWhom = "None";
         GuideC = 0;
         totalGuideCost = 0;
-        currentGuideWhom.innerText = guideWhom;
 
-        // Update guide immediately when guideNeed is set to "No"
-        updateGuideWhom();
         // Manually trigger PriceAdv function
         PriceAdv();
     }
     currentGuideNeed.innerText = guideNeed;
 }
 
-currentGuideWhom.innerText = "No";
+currentGuideWhom.innerText = "None";
 function updateGuideWhom() {
     if (guideNeed === "Yes") {
         if (this.value === "child") {
@@ -421,13 +422,21 @@ function updateGuideWhom() {
             totalAdult = Number(adultsL + adultsF);
             guideCostA = totalAdult * 1000;
             GuideC = guideCostA;
-        } else {
+        }
+        else if(this.value === "both") {
             guideWhom = "Both";
             totalChild = Number(childL + childF);
             totalAdult = Number(adultsL + adultsF);
             guideCostC = totalChild * 500;
             guideCostA = totalAdult * 1000;
             GuideC = guideCostC + guideCostA;
+        }
+        else{
+            guideWhom = "None";
+            GuideC = 0;
+            totalGuideCost = 0;
+            totalChild = Number(childL + childF);
+            totalAdult = Number(adultsL + adultsF);
         }
     } else {
         guideNeed = "No";
@@ -458,6 +467,7 @@ function showCurrentPrice() {
 
 currentAdvCost.innerText = 0;
 function PriceAdv() {
+
     if (adventure === "Scuba-Diving") {
         let DAdultL = Number(adultsL * 5000);
         let DAdultF = Number(adultsF * 10000);
@@ -480,8 +490,8 @@ function PriceAdv() {
 
 function displayPrice(){    
 
-    const formattedA_Date = A_Date.toISOString().split('T')[0];
-    const formattedD_Date = D_Date.toISOString().split('T')[0];
+    const formattedA_Date = A_Date ? A_Date.toISOString().split('T')[0] : 'Not selected';
+    const formattedD_Date = D_Date ? D_Date.toISOString().split('T')[0] : 'Not selected';
     
     //calculating total number of days
     totalDays = Number((D_Date instanceof Date && !isNaN(D_Date) && A_Date instanceof Date && !isNaN(A_Date))
@@ -630,28 +640,39 @@ function displayPrice(){
         <td>---</td>
         <td>Rs ${netTotal}</td>
     </tr>`;   
-    if (!CustomerName || !CustomerTp || !CustomerEmail || formattedA_Date==='Not selected' || formattedD_Date==='Not selected' || !branch || totalRooms === 0) {
-        window.alert("Please fill in all the required fields: Name, Contact Number, Email, Arrival Date, Departure Date, Hotel Branch & Number Of Rooms required");
-        return;
+
+    let totalparticipants = Number(adultsF + adultsL + childF + childL);
+    if (!CustomerName || !CustomerTp || !CustomerEmail || formattedA_Date === 'Not selected' || formattedD_Date === 'Not selected' || !branch ||branch === "None" || totalparticipants === 0 || totalRooms === 0) {
+        window.alert("Please fill in all the required fields");
     }
     else{
         txtTable.innerHTML = table1;
         theForm.reset();
         currentADate.innerText = "Not Selected";
+        currentDDate.innerText = "Not Selected";
+        updateTotalDays.innerText=0;
         currentBranch.innerText = "None";
-        currentAdultL.innerText = "0";
-        currentChildL.innerText = "0";
-        currentAdultF.innerText = "0";
-        currentChildF.innerText = "0";
-        currentSingle.innerText= "0";
-        currentDouble.innerText= "0";
-        currentTriple.innerText= "0";
-        currentFood.innerText= "0";
-        currentExtraBed.innerText= "0";
+        currentAdultL.innerText = 0;
+        currentChildL.innerText = 0;
+        currentAdultF.innerText = 0;
+        currentChildF.innerText = 0;
+        currentSingle.innerText= 0;
+        currentDouble.innerText= 0;
+        currentTriple.innerText= 0;
+        currentFood.innerText= 0;
+        currentExtraBed.innerText= 0;
         currentExtraReq.innerText="None";
+        currentRoomCost.innerText= 0;
+        currentTimeAdv.innerText = 0;
+        currentGuideNeed.innerText = "No";
+        currentGuideWhom.innerText = "No";
+        currentAdvCost.innerText = 0;
+        currentPoints.innerText= 0;
     }
 
 }
+
+currentPoints.innerText = 0;
 function loyalty() {
     currentPoints.innerText = `${loyaltyPoints}`;
 }
@@ -672,6 +693,10 @@ function updateADVprice() {
     let costAdv = DAdultL + DChildL + DAdultF + DChildF;
     let totalAdv = costAdv * advTime + totalGuideCost;
 
+    if(branch === "None"){
+        Window.alert("Please fill in all the required fields")
+    }
+    let totalparticipants = Number(adultsF + adultsL + childF + childL);
     let table2 =
         `
             <tr>
@@ -729,8 +754,8 @@ function updateADVprice() {
         `;
 
                     // Validate form input values
-        if (!CustomerName || !CustomerTp || !CustomerEmail || formattedA_Date === 'Not selected' || !branch || !guideNeed || !guideWhom) {
-            window.alert("Please fill in all the required fields: Name, Contact Number, Email, Arrival Date, Hotel Branch & Need Guide Assistance");
+        if (!CustomerName || !CustomerTp || !CustomerEmail || formattedA_Date === 'Not selected' || !branch || branch === 'None' || !adventure || adventure === 'None' || totalparticipants === 0 || !guideNeed || !guideWhom) {
+            window.alert("Please fill in all the required fields");
             return;
         }
         else{
@@ -743,16 +768,25 @@ function updateADVprice() {
          //resetting the form and current booking back to default
          theForm.reset();
          currentADate.innerText = "Not Selected";
+         currentDDate.innerText = "Not Selected";
+         updateTotalDays.innerText=0;
          currentBranch.innerText = "None";
-         currentAdultL.innerText = "0";
-         currentChildL.innerText = "0";
-         currentAdultF.innerText = "0";
-         currentChildF.innerText = "0";
-         currentAdv.innerText = "None";
-         currentTimeAdv.innerText = "0";
+         currentAdultL.innerText = 0;
+         currentChildL.innerText = 0;
+         currentAdultF.innerText = 0;
+         currentChildF.innerText = 0;
+         currentSingle.innerText= 0;
+         currentDouble.innerText= 0;
+         currentTriple.innerText= 0;
+         currentFood.innerText= 0;
+         currentExtraBed.innerText= 0;
+         currentExtraReq.innerText="None";
+         currentRoomCost.innerText= 0;
+         currentTimeAdv.innerText = 0;
          currentGuideNeed.innerText = "No";
          currentGuideWhom.innerText = "No";
-         currentAdvCost.innerText = "0";
+         currentAdvCost.innerText = 0;
+         currentPoints.innerText= 0;
         }
 }
 

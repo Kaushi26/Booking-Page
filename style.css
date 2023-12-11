@@ -13,12 +13,12 @@ a{
     font-family: 'Nova Square', cursive;
 }
 
-
 .logo{
     float:left;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
+    margin-right: 10px;
     background: transparent; 
 }
 .logo img{
@@ -48,11 +48,16 @@ a{
 }
     
 .nav{
-    text-align:left;  
+
     background-color: #303030; 
     margin-top: 75px;
     margin-bottom: 75px;
     padding: 3px;
+    width: 80%;
+    
+}
+.nav nav{
+    display: flex; 
 }
 .nav a{
     color:#ba0000;
@@ -61,7 +66,9 @@ a{
     font-size: 18pt;
     padding: 8px;
     margin-right: 1%;
-    margin-left: 1.5%;
+    margin-left: 1%;
+    text-align: center;
+    width: fit-content;
 }
 
 .top{
@@ -97,16 +104,20 @@ a{
     color: #dddddd;
 }
 .roomtitle{
+    width: fit-content;
     margin-top: -3.5%;
+    margin: auto;
 }
 
 .roomtitle h1{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     font-weight: bold;
     font-size: 60pt;
-    border-bottom: 4px solid #ff2b2b;
     color:#ff2b2b ;
-    margin-bottom: 6%;
+    margin-bottom: 3.5%;
     transform: scale(2);
     animation: flipv 3s forwards cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
@@ -116,28 +127,31 @@ a{
 }
 .roompic{
     height: 500px;
-    width: 450px;
+    width: 100%;
     background: transparent; 
 }
 
 .room_d{
     margin-top: -3.5%;
     display: flex;
+    flex-basis: 30%;
     color: #ffffff;
     gap: 15px;
     padding: 15px;
     font-size: 17.5pt;
     text-align: center;
     margin-bottom: 2%; 
-    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
     background: transparent;
 }
 .room_d section{
     background-color: rgb(232, 123, 15);
     border-radius: 12.5%;
-    width: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
+    width: 33%;
+    margin-left: 0.33%;
+    margin-right: 0.33%;
 }
 
 .roomt{
@@ -204,8 +218,8 @@ a{
     font-size: 17.5pt;
     width: 45%;
     justify-content: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 } 
 .FormInput{
     display: flex;
@@ -244,6 +258,9 @@ a{
 .FormInput fieldset{
     background: transparent;
     border-radius: 12.5%;
+    width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 
 }
 .FormInput legend{
@@ -264,6 +281,7 @@ a{
     width: fit-content;
     text-align: center;  
     margin-bottom: -2%;
+    margin-left: -7.5%;
 }
 .duration input{
     width: 175px;
@@ -555,6 +573,7 @@ margin-right: 10%;
 #expand{
     width: 200px;
 }
+
 
 
 
