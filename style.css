@@ -54,10 +54,13 @@ a{
     margin-bottom: 75px;
     padding: 3px;
     width: 80%;
+
     
 }
 .nav nav{
     display: flex; 
+    align-content: center;
+    justify-content: center;
 }
 .nav a{
     color:#ba0000;
@@ -590,12 +593,16 @@ margin-right: 10%;
         padding: 0%;
         margin: 0%;
     }
+    .socialmedia{
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        align-items: center;
+    }
     .socialmedia nav{
         height: auto;
         margin-top: 1%;
-        margin-left: 40%;
-        margin-bottom: 5%;
-        float: left;
+
         background: transparent;
         position: sticky;
     }
@@ -603,16 +610,25 @@ margin-right: 10%;
         height: auto;
         margin: 0%;
         margin-top: 5%;
+        width: 50%;
+        margin-left: 25%;
+        align-items: center;
+        text-align: center;
+
     }
     .nav a{
         margin-bottom: 2%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav nav{
-       margin: 0%;
+       margin: 0;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: center;     
+        align-items: center;
     }
     .logo{
         width: 100%;
@@ -694,7 +710,7 @@ margin-right: 10%;
     }
     .rdesc{
         width: auto;
-        padding: 15px;
+        padding: 20px;
     }
     .roomt{
         padding: 22.5px;

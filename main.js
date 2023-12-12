@@ -394,15 +394,12 @@ currentGuideNeed.innerText = "No";
 function updateGuideNeed() {
     if (this.value === "yes") {
         guideNeed = "Yes";
-        guideWhom = "None"; // Set default guideWhom to "None"
         updateGuideWhom();
         PriceAdv();
     } else {
         guideNeed = "No";
-        guideWhom = "None";
         GuideC = 0;
         totalGuideCost = 0;
-
         // Manually trigger PriceAdv function
         PriceAdv();
     }
@@ -422,37 +419,39 @@ function updateGuideWhom() {
             totalAdult = Number(adultsL + adultsF);
             guideCostA = totalAdult * 1000;
             GuideC = guideCostA;
-        }
-        else if(this.value === "both") {
+        } else if (this.value === "both") {
             guideWhom = "Both";
             totalChild = Number(childL + childF);
             totalAdult = Number(adultsL + adultsF);
             guideCostC = totalChild * 500;
             guideCostA = totalAdult * 1000;
             GuideC = guideCostC + guideCostA;
-        }
-        else{
+        } else {
             guideWhom = "None";
             GuideC = 0;
             totalGuideCost = 0;
             totalChild = Number(childL + childF);
             totalAdult = Number(adultsL + adultsF);
         }
-    } else {
-        guideNeed = "No";
-        guideWhom = "None";
+    }
+    else{
+        if (this.value === "child") {
+            guideWhom = "Child";
+        } else if (this.value === "adult") {
+            guideWhom = "Adult";
+        } else if (this.value === "both") {
+            guideWhom = "Both";
+        } else {
+            guideWhom = "None";
+
+        }
         GuideC = 0;
         totalGuideCost = 0;
         totalChild = Number(childL + childF);
         totalAdult = Number(adultsL + adultsF);
     }
-
-    totalGuideCost = GuideC * advTime;
-    currentGuideWhom.innerText = guideWhom;
-    // Manually trigger PriceAdv function
-    PriceAdv();
+    currentGuideWhom.innerText=guideWhom;
 }
-
 currentRoomCost.innerText= 0;
 function showCurrentPrice() {
     totalDays = Number(
